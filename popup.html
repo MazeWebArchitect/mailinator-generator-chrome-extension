@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Emails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Emails</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Mail</th>
+                <th>Used on</th>
+                <th>Enter Mailbox</th>
+            </tr>
+        </thead>
+        <tbody id="emailTableBody">
+        </tbody>
+    </table>
+    <div id="errorMessage" class="error"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
